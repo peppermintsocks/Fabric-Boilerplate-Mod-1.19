@@ -13,7 +13,7 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "MIT License",
+  "license": "MIT",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.peppermint.boilerplatemod.BoilerplateModClient"
+    ],
+    "fabric-datagen": [
+      "net.peppermint.boilerplatemod.BoilerplateModDataGenerator"
     ]
   },
   "mixins": [
