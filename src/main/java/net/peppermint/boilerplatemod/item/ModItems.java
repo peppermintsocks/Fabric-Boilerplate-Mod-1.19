@@ -1,5 +1,4 @@
 package net.peppermint.boilerplatemod.item;
-
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -15,11 +14,11 @@ public class ModItems {
 //            .icon(() -> new ItemStack(Items.BEEHIVE))
 //            .build();
 
-    public static final Item SWEET_POTION = registerItem("sweet_potion", new Item(new FabricItemSettings()));
-
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(BoilerplateMod.MOD_ID, name), item);
     }
+
+    public static final Item SWEET_POTION = registerItem("sweet_potion", new Item(new FabricItemSettings()));
 
     public static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

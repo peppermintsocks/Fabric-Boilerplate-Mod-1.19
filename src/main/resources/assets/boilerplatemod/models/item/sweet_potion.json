@@ -1,6 +1,6 @@
 {
   "parent" : "item/generated",
   "textures": {
-    "layer0": "boilerplatemod:item/sweet_potion.png"
+    "layer0": "boilerplatemod:item/sweet_potion"
   }
 }
